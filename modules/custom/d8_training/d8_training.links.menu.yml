@@ -1,0 +1,6 @@
+d8_training.node_list:
+  title: Training
+  description: 'Testing'
+  parent: system.admin_config_development
+  route_name: d8_training.node_list
+

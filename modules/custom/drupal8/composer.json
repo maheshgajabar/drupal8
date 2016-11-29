@@ -1,0 +1,14 @@
+{
+  "name": "drupal/drupal8",
+  "type": "drupal-module",
+  "description": "Test module using drupal console",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/drupal8",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "http://drupal.org/project/issues/drupal8",
+    "source": "http://cgit.drupalcode.org/drupal8"
+  },
+  "require": { }
+}

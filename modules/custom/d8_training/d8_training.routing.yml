@@ -1,0 +1,17 @@
+d8_training.node_list:
+  path: '/list/node'
+  defaults:
+    _controller: '\Drupal\d8_training\Controller\NodeListingController::content'
+  requirements: 
+    _permission: 'access content'
+
+
+d8_training.entity_list:
+  path: '/listing/{node}'
+  defaults:
+    _controller: '\Drupal\d8_training\Controller\NodeListingController::listing'
+  requirements: 
+    _permission: 'access content'
+
+
+

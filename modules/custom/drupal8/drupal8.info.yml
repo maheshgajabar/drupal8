@@ -1,0 +1,5 @@
+name: drupal8
+type: module
+description: Test module using drupal console
+core: 8.x
+package: Drupal console
