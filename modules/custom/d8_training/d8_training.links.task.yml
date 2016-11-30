@@ -1,6 +1,0 @@
-d8_training.admin:
-  title: Training
-  description: 'Training Test'
-  route_name: d8_training.node_list
-  base_route: d8_training.admin
-

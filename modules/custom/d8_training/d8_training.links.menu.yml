@@ -1,6 +1,7 @@
-d8_training.node_list:
-  title: Training
-  description: 'Testing'
-  parent: system.admin_config_development
-  route_name: d8_training.node_list
+d8_training.my_configuration_form:
+  title: 'MyConfigurationForm'
+  route_name: d8_training.my_configuration_form
+  description: 'A description for the menu entry'
+  parent: system.admin_config_system
+  weight: 99
 

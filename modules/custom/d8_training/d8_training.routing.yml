@@ -3,7 +3,7 @@ d8_training.node_list:
   defaults:
     _controller: '\Drupal\d8_training\Controller\NodeListingController::content'
   requirements: 
-    _permission: 'access content'
+    _query_siteid_check: 'TRUE'
 
 
 d8_training.entity_list:
@@ -13,5 +13,21 @@ d8_training.entity_list:
   requirements: 
     _permission: 'access content'
 
+d8_training.custom_form:
+  path: '/myform'
+  defaults:
+    _form: '\Drupal\d8_training\Form\SimpleForm'
+  requirements: 
+    _permission: 'access content'
 
+
+d8_training.my_configuration_form:
+  path: '/admin/config/d8_training/myconfiguration'
+  defaults:
+    _form: '\Drupal\d8_training\Form\MyConfigurationForm'
+    _title: 'MyConfigurationForm'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
 

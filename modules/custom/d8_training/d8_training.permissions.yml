@@ -1,0 +1,6 @@
+access d8 content:
+  title: 'Access d8 content'
+
+permission_callbacks:
+  - \Drupal\d8_training\NodeListingPermissions::getPermissions
+
