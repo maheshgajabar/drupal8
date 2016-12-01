@@ -33,13 +33,13 @@ class MyConfigurationForm extends ConfigFormBase {
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
     $config = $this->config('d8_training.myconfiguration');
-    $form['weather'] = [
+    $form['app-id'] = [
       '#type' => 'textfield',
-      '#title' => $this->t('Weather'),
-      '#description' => $this->t('Weather'),
+      '#title' => $this->t('App ID'),
+      '#description' => $this->t('App ID'),
       '#maxlength' => 64,
       '#size' => 64,
-      '#default_value' => $config->get('weather'),
+      '#default_value' => $config->get('app-id'),
     ];
     return parent::buildForm($form, $form_state);
   }
@@ -58,7 +58,7 @@ class MyConfigurationForm extends ConfigFormBase {
     parent::submitForm($form, $form_state);
 
     $this->config('d8_training.myconfiguration')
-      ->set('weather', $form_state->getValue('weather'))
+      ->set('app-id', $form_state->getValue('app-id'))
       ->save();
   }
 

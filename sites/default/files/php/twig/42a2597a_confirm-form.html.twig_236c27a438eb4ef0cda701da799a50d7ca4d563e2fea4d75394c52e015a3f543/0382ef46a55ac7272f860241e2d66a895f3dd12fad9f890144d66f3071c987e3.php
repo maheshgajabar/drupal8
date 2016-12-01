@@ -1,7 +1,7 @@
 <?php
 
-/* core/themes/stable/templates/admin/system-config-form.html.twig */
-class __TwigTemplate_7a8c42f6d854dec53777f4de6f6a4084cf8ca675f0dace46731e9f50158c3686 extends Twig_Template
+/* core/themes/classy/templates/form/confirm-form.html.twig */
+class __TwigTemplate_89a297d48354d3149d39ac5a44853e6238745acdbddaffe1aabd0447924e7c8e extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -39,7 +39,7 @@ class __TwigTemplate_7a8c42f6d854dec53777f4de6f6a4084cf8ca675f0dace46731e9f50158
             throw $e;
         }
 
-        // line 15
+        // line 13
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["form"]) ? $context["form"] : null), "html", null, true));
         echo "
 ";
@@ -47,7 +47,7 @@ class __TwigTemplate_7a8c42f6d854dec53777f4de6f6a4084cf8ca675f0dace46731e9f50158
 
     public function getTemplateName()
     {
-        return "core/themes/stable/templates/admin/system-config-form.html.twig";
+        return "core/themes/classy/templates/form/confirm-form.html.twig";
     }
 
     public function isTraitable()
@@ -57,17 +57,15 @@ class __TwigTemplate_7a8c42f6d854dec53777f4de6f6a4084cf8ca675f0dace46731e9f50158
 
     public function getDebugInfo()
     {
-        return array (  43 => 15,);
+        return array (  43 => 13,);
     }
 }
 /* {#*/
 /* /***/
 /*  * @file*/
-/*  * Theme override for a system settings form.*/
+/*  * Theme override for confirm form.*/
 /*  **/
-/*  * This template will be used when a system config form specifies 'config_form'*/
-/*  * as its #theme callback.  Otherwise, by default, system config forms will be*/
-/*  * themed by form.html.twig. This does not alter the appearance of a form at all,*/
+/*  * By default this does not alter the appearance of a form at all,*/
 /*  * but is provided as a convenience for themers.*/
 /*  **/
 /*  * Available variables:*/

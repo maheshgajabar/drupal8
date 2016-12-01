@@ -4,3 +4,7 @@ access d8 content:
 permission_callbacks:
   - \Drupal\d8_training\NodeListingPermissions::getPermissions
 
+
+access console demo:
+  title: 'Access Console Demo'
+  description: 'Allow access console demo'
