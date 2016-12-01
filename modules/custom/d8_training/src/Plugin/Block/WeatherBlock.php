@@ -51,12 +51,13 @@ class WeatherBlock extends BlockBase implements ContainerFactoryPluginInterface{
   public function build(){
   $data = $this->owf->fetchWeatherData($this->configuration['city-name']);
   $header = array("Min Temp","Max Temp","Pressure","Humidity","Wind speed");
-  $rows =  array();
-  $rows[] = array($data['main']['temp_min'],$data['main']['temp_max'],$data['main']['pressure'],$data['main']['humidity'],$data['wind']['speed']);
-   return [
-  '#type' => 'table',
-  '#header' => $header,
-  '#rows' => $rows,
-];
+  
+  $rows = array('temp_min' => $data['main']['temp_min'],'temp_max' => $data['main']['temp_max'],'pressure' => $data['main']['pressure'],'humidity' => $data['main']['humidity'],'wind' => $data['wind']['speed']);
+   /*return [
+  '#theme' => 'weather-forecast-block',  
+  '#weatherdata' => $rows,
+  '#attached' => ['library' => ['d8_training/weather_widget']]
+];*/
+return array();
    }
 }
