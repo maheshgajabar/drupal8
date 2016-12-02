@@ -20,3 +20,6 @@ services:
     class: Drupal\d8_training\EventSubscriber\EventManager
     tags : 
        - { name: event_subscriber}
+  d8_training.nodes_list_manager:
+    class: Drupal\d8_training\NodesListManager
+    arguments : ['@database']
